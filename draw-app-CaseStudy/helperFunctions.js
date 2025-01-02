@@ -16,8 +16,7 @@ function HelperFunctions() {
 	//event handler for the save image button. saves the canvsa to the
 	//local file system.
 	select("#saveImageButton").mouseClicked(function() {
-		let canvas = select('#myCanvas');
-		console.log(canvas);
+		let canvas = select('canvas');
 		saveCanvas(canvas, 'myCanvas', 'jpg');
 	});
 }
